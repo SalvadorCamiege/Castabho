@@ -1,0 +1,606 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Matemasie&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+
+}
+
+header{
+    width: 100%;
+}
+
+nav h1{
+    color: blueviolet;
+}
+
+.conteiner{
+    margin: 0px auto;
+    padding: 0px 0px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Adicionado para fixar o nav no topo */
+    top: 0; /* Posiciona o nav no topo da página */
+    width: 100%; /* Garante que o nav ocupe toda a largura da página */
+    z-index: 1000; /* Coloca o nav acima de outros elementos */
+    background-color: white; /* Adiciona um fundo branco para evitar sobreposição */
+    padding: 30px; /* Adiciona um pouco de espaçamento interno */
+    box-shadow: 0px  4px 6px rgb(247, 240, 240);
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul a{
+    display: block;
+    text-decoration: none;
+    font-family: Lato;
+    margin: 0 20px;
+    font-size: 15px;
+    display: block;
+    color: black;
+}
+
+nav ul a:hover{
+    color: blueviolet;
+    transition: 1s;
+}
+
+/* menu mobile*/
+
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: blueviolet;
+    display: none;
+}
+
+/* menu mobile utilizando o x para eliminar o menu*/
+
+nav .close-icon{
+   cursor: pointer;
+   font-size: 40px;
+   color: blueviolet;
+   display: none;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.banner .banner-text{
+    margin: 160px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner{
+    background: url("../images/about/welcome-banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 641px;
+    
+}
+
+.banner-text h1{
+    color: white;
+    font-size: 3.7em;
+    margin-bottom: 50px;
+}
+
+.banner-text p{
+    color: white;
+    font-size: 1.4em;
+}
+
+.btn{
+    background-color: blueviolet;
+    padding: 15px 35px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+.btn:hover{
+    background-color: rgb(128, 4, 243);
+    transition: 1s;
+}
+
+.sobre h1{
+     margin: 50px 0px 50px 0px;
+     text-align: center;
+     padding-bottom: 50px;
+     border-bottom: 1px solid rgb(242, 204, 204);
+}
+
+.sobre .conteiner{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.sobre .sobre-text{
+    width: 50%;
+    margin: 10px;
+    
+}
+
+.sobre .sobre-text h3{
+      width: 90%;
+      line-height: 1.5em;
+      margin-bottom: 30px;
+}
+
+.sobre .sobre-text p{
+    width: 90%;
+    line-height: 1.5em;
+}
+
+.sobre-text p{
+    font-size: 1em;
+}
+
+.sobre .sobre-img{
+    width: 40%;
+}
+
+.sobre .sobre-img img{
+    width: 100%;
+}
+
+.sobre1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: aliceblue;
+}
+
+.sobre1 h1{
+     margin: 30px;
+     padding-top: 30px;
+     border-bottom: 1px solid rgb(241, 208, 208);
+     padding-bottom: 50px;
+}
+
+.sobre-text1{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.sobre-text1 h4{
+     margin-bottom: 10px;
+}
+
+.item {
+    flex: 1 1 calc(33.333% - 20px); /* Itens ocupam 33.333% da largura do container menos o espaçamento */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 15px; /* Espaçamento interno dos itens */
+    background-color: blueviolet;
+    margin: 10px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    padding: 40px;
+}
+
+.item:hover{
+    background-color: rgb(201, 161, 238);
+    transition: 2s;
+}
+
+.item p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.sobre2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.sobre2 h1{
+    margin: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid rgb(241, 208, 208);
+    padding-bottom: 50px;
+}
+
+/* CSS do gráfico do meu site*/
+
+#skills {
+    padding: 60px 0;
+}
+
+.section-heading h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.skill-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.skill-side {
+    margin-bottom: 20px;
+}
+
+.barWrapper {
+    margin-bottom: 20px;
+}
+
+.progressText {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.single-progress-txt {
+    position: relative;
+}
+
+.progress {
+    height: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: blueviolet;
+    width: 0; /* Inicialmente 0 para animação */
+    transition: width 1s ease-in-out;
+    border-radius: 10px 0 0 10px;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-6 {
+    flex: 0 0 47%;
+    max-width: 70%;
+    padding: 0 15px;
+}
+/*termino do css do meu gráfico do meu site*/
+
+.expe-text{
+    background-color: blueviolet;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 50px;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.expe-text:hover{
+    background-color: rgb(179, 134, 222);
+    transition: 2s;
+}
+
+.expe-text ul li{
+    padding: 10px;
+}
+
+.expe h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.expe p{
+    margin: 10px;
+}
+
+.expe-text :hover{
+       color: white;
+       transition: 1s;
+}
+
+.profile-border {
+    border-top: 1px solid #dee2e6;
+    margin: 40px 0;
+}
+
+.perfil{
+    margin: 50px;
+    background-color: white;
+    
+}
+
+.perfil h1{
+     text-align: center;
+     border-bottom: 1px solid rgb(233, 218, 218);
+     padding-bottom: 60px;
+}
+
+.perfil-text{
+     margin: 40px;
+     background-color: white;
+     text-align: center;
+}
+
+.perfil {
+    padding: 20px;
+}
+
+.perfil-text {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.perfil1 {
+    display: flex;
+    flex-direction: column; /* Alinha ícone e texto em coluna */
+    align-items: center; /* Centraliza ícone e texto horizontalmente */
+    justify-content: center; /* Centraliza ícone e texto verticalmente, se necessário */
+    text-align: center;
+    padding: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.perfil1:hover{
+    background-color: blueviolet; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    border: 2px solid white; /* Borda branca ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+.perfil1 i {
+    font-size: 24px; /* Tamanho do ícone */
+    margin-bottom: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.perfil {
+    padding: 20px;
+    text-align: center;
+}
+
+.perfil {
+    padding: 20px;
+    text-align: center;
+}
+
+.perfil {
+    padding: 20px;
+    text-align: center;
+}
+
+.portifolio {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens igualmente ao longo do eixo principal */
+    align-items: center; /* Alinha os itens ao longo do eixo transversal */
+    max-width: 1200px; /* Ajuste conforme o tamanho desejado */
+    margin: 0 auto; /* Centraliza o grid horizontalmente */
+    gap: 10px; /* Espaçamento entre os grupos de imagens */
+    
+}
+
+.img-side {
+    display: flex;
+    flex-direction: column; /* Imagens empilhadas verticalmente */
+    gap: 10px; /* Espaçamento entre as imagens */
+    flex: 1; /* Permite que as colunas laterais ocupem espaço flexível */
+}
+
+.img-center {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente dentro da coluna central */
+    align-items: center; /* Centraliza a imagem verticalmente dentro da coluna central */
+    flex: 1; /* Permite que a coluna central ocupe espaço flexível */
+}
+
+.img-container {
+    position: relative; /* Necessário para a sobreposição */
+    overflow: hidden; /* Oculta parte da imagem que sai do contêiner */
+    transition: transform 0.3s ease; /* Transição suave para o efeito de movimento */
+}
+
+.img-container img {
+    width: 100%; /* Ajusta a largura para preencher o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço em branco abaixo da imagem */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transições suaves para movimento e opacidade */
+}
+
+.overlay {
+    position: absolute; /* Sobreposição sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo escura com transparência */
+    color: white; /* Cor do texto */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o texto */
+    align-items: center; /* Centraliza verticalmente o texto */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+    text-align: center;
+    font-size: 18px; /* Tamanho do texto */
+    padding: 20px; /* Espaçamento ao redor do texto */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do contêiner */
+    cursor: pointer;
+}
+
+.img-container:hover .overlay {
+    opacity: 1; /* Torna a sobreposição visível ao passar o mouse */
+}
+
+.img-container:hover img {
+    opacity: 0.3; /* Torna a imagem mais transparente ao passar o mouse */
+    transform: scale(1.1); /* Aumenta ligeiramente o tamanho da imagem para criar um efeito de zoom */
+}
+
+.img-container:hover {
+    transform: translateY(-5px); /* Move o contêiner da imagem para cima ao passar o mouse */
+}
+
+.Galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte se não houver espaço suficiente */
+    gap: 20px; /* Espaçamento entre as imagens */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    max-width: 1200px; /* Define a largura máxima para a galeria */
+    margin: 0 auto; /* Centraliza a galeria horizontalmente na tela */
+}
+
+/* Reset básico para garantir que todos os navegadores tenham a mesma aparência */
+
+.sobre1 {
+    padding: 40px 20px;
+    background-color: #f5f5f5; /* Cor de fundo suave para a seção */
+    text-align: center;
+}
+
+.sobre1 h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formulario-text {
+    flex: 1;
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 20px;
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: auto;
+}
+
+.formulario-text p {
+    margin-bottom: 15px;
+}
+
+.formulario-text input[type="text"],
+.formulario-text input[type="email"],
+.formulario-text textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.formulario-text input[type="submit"] {
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.formulario-text input[type="submit"]:hover {
+    background-color: #6a0dad; /* Tom mais escuro no hover */
+}
+
+.text {
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px; /* Largura máxima das informações de contato */
+    margin: auto;
+    height: 305px;
+    justify-content: center;
+}
+
+.text h2 {
+    font-size: 2em;
+    color: blueviolet;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.rosa h3 {
+    font-size: 1.2em;
+    color: blueviolet;
+    margin-bottom: 5px;
+}
+
+.rosa p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+.salvador{
+    background-color: white;
+    padding: 50px;
+}
+
+.salvador p{
+    text-align: center;
+    color: black;
+    font-size: 2m;
+}
+

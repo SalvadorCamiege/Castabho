@@ -1,0 +1,962 @@
+@charset "UTF-8";
+
+@media (max-width: 1100px) {
+    .ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: flex; /* Adicione display: flex; se não estiver aplicado em algum lugar */
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0.4% at 100% 0);
+        justify-content: center;
+        transition: 0.7s; /* Corrigido de 0,7s para 0.7s */
+    }
+
+    .ul.open{
+        clip-path: circle(141.4% at 100% 0);
+    }
+
+    .ul a {
+        margin: 10px;
+        font-size: 20px;
+    }
+
+     
+    nav .menu-icon{
+        display: block;
+    }
+
+    nav .close-icon {
+        position: absolute;
+        display: block;
+        top: 40px;
+        height: 28px;
+    }
+
+    .banner{
+        background: url("../images/about/welcome-banner.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 641px;
+        
+    }
+
+    /*sobre*/
+    .sobre .conteiner{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    
+    }
+    
+    .sobre .sobre-text{
+        width: 50%;
+        padding: 0 40px;
+        
+    }
+    
+    .sobre .sobre-text h3{
+          width: 100%;
+          line-height: 1.5em;
+          margin-bottom: 30px;
+          font-size: 15px;
+    }
+    
+    .sobre .sobre-text p{
+        width: 100%;
+        line-height: 1.5em;
+        font-size: 15px;
+    }
+    
+    .sobre .sobre-img{
+        width: 50%;
+    }
+    
+    .sobre .sobre-img img{
+        width: 90%;
+    }
+
+    /*educação*/
+
+    .sobre1{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        background-color: aliceblue;
+    }
+    
+    .sobre1 h1{
+         margin: 30px;
+         padding-top: 30px;
+         border-bottom: 1px solid rgb(241, 208, 208);
+         padding-bottom: 50px;
+    }
+    
+    .sobre-text1{
+        display: flex;
+        width: 100%;
+        margin: auto;
+       
+    }
+    
+    .sobre-text1 h4{
+         margin-bottom: 10px;
+    }
+    
+    .item {
+        flex: 1 1 calc(33.333% - 20px); /* Itens ocupam 33.333% da largura do container menos o espaçamento */
+        border-radius: 8px; /* Cantos arredondados */
+        padding: 15px; /* Espaçamento interno dos itens */
+        background-color: blueviolet;
+        margin: 10px;
+        margin-bottom: 80px;
+        cursor: pointer;
+        padding: 40px;
+    }
+    
+    .item:hover{
+        background-color: rgb(201, 161, 238);
+        transition: 2s;
+    }
+    
+    .item p{
+        margin-top: 10px;
+        text-align: justify;
+    }
+    
+    .sobre2{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .sobre2 h1{
+        margin: 30px;
+        padding-top: 30px;
+        border-bottom: 1px solid rgb(241, 208, 208);
+        padding-bottom: 50px;
+    }
+
+
+}
+
+@media (max-width: 940px) and (min-width: 800px){
+    .perfil-text{
+        margin: 40px;
+        background-color: white;
+        text-align: center;
+   }
+   
+   .perfil {
+       padding: 30px;
+   }
+   
+   .perfil-text {
+       display: grid;
+       grid-template-columns: repeat(4, 1fr); /* Define 4 colunas */
+       gap: 10px; /* Espaçamento entre os itens */
+   }
+   
+   .perfil1 {
+       display: flex;
+       flex-direction: column; /* Alinha ícone e texto em coluna */
+       align-items: center; /* Centraliza ícone e texto horizontalmente */
+       justify-content: center; /* Centraliza ícone e texto verticalmente, se necessário */
+       text-align: center;
+       padding: 25px;
+       border: 1px solid black;
+       cursor: pointer;
+   }
+   
+   .perfil1:hover{
+       background-color: blueviolet; /* Cor de fundo ao passar o mouse */
+       color: white; /* Cor do texto ao passar o mouse */
+       border: 2px solid white; /* Borda branca ao passar o mouse */
+       transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+       
+   }
+   
+   .perfil1 i {
+       font-size: 24px; /* Tamanho do ícone */
+       margin-bottom: 10px; /* Espaço entre o ícone e o texto */
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+}
+
+@media (max-width: 799px) and (min-width : 600px){
+    .sobre .conteiner{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .sobre .sobre-text{
+        width: 100%;
+        margin: 10px;
+        
+    }
+    
+    .sobre .sobre-text h3{
+          width: 90%;
+          margin: auto;
+          line-height: 1.5em;
+          margin-bottom: 30px;
+    }
+    
+    .sobre .sobre-text p{
+        width: 90%;
+        line-height: 1.5em;
+        margin: auto;
+    }
+    
+    .sobre-text p{
+        font-size: 1em;
+    }
+    
+    .sobre .sobre-img{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .sobre .sobre-img img{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .sobre1{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .sobre1 h1{
+         margin: 30px;
+         padding-top: 30px;
+         border-bottom: 1px solid rgb(241, 208, 208);
+         padding-bottom: 50px;
+    }
+    
+    .sobre-text1{
+        display: block;
+        width: 100%;
+        margin: auto;
+    } 
+
+    .perfil-text{
+        margin: 40px;
+        background-color: white;
+        text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+   }
+   
+   .perfil-text {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr); /* Define 4 colunas */
+       gap: 10px; /* Espaçamento entre os itens */
+       width: 100%;
+       margin: auto;
+   }
+   
+   .perfil1 {
+       display: flex;
+       flex-direction: column; /* Alinha ícone e texto em coluna */
+       align-items: center; /* Centraliza ícone e texto horizontalmente */
+       justify-content: center; /* Centraliza ícone e texto verticalmente, se necessário */
+       text-align: center;
+       padding: 20px;
+       border: 1px solid black;
+       cursor: pointer;
+   }
+   
+   .perfil1:hover{
+       background-color: blueviolet; /* Cor de fundo ao passar o mouse */
+       color: white; /* Cor do texto ao passar o mouse */
+       border: 2px solid white; /* Borda branca ao passar o mouse */
+       transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+   
+   .perfil1 i {
+       font-size: 24px; /* Tamanho do ícone */
+       margin-bottom: 10px; /* Espaço entre o ícone e o texto */
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+}
+
+@media (max-width: 600px) and (min-width : 500px){
+    .banner-text h1{
+        color: white;
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+    
+    .banner-text p{
+        color: white;
+        font-size: 1.2em;
+    }
+    
+    .btn{
+        background-color: blueviolet;
+        padding: 10px 25px;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 35px;
+    }
+    
+    
+    .sobre .conteiner{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .sobre .sobre-text{
+        width: 100%;
+        margin: 10px;
+        
+    }
+    
+    .sobre .sobre-text h3{
+          width: 100%;
+          margin: auto;
+          line-height: 1.5em;
+          margin-bottom: 30px;
+    }
+    
+    .sobre .sobre-text p{
+        width: 100%;
+        line-height: 1.5em;
+        margin: auto;
+    }
+    
+    .sobre-text p{
+        font-size: 1em;
+    }
+    
+    .sobre .sobre-img{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .sobre .sobre-img img{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .sobre1{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .sobre1 h1{
+         margin: 30px;
+         padding-top: 30px;
+         border-bottom: 1px solid rgb(241, 208, 208);
+         padding-bottom: 50px;
+    }
+    
+    .sobre-text1{
+        display: block;
+        width: 100%;
+        margin: auto;
+    } 
+
+    .perfil-text{
+        margin: 40px;
+        background-color: white;
+        text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+   }
+   
+   .perfil-text {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr); /* Define 4 colunas */
+       gap: 10px; /* Espaçamento entre os itens */
+       width: 100%;
+       margin: auto;
+   }
+   
+   .perfil1 {
+       display: flex;
+       flex-direction: column; /* Alinha ícone e texto em coluna */
+       align-items: center; /* Centraliza ícone e texto horizontalmente */
+       justify-content: center; /* Centraliza ícone e texto verticalmente, se necessário */
+       text-align: center;
+       padding: 20px;
+       border: 1px solid black;
+       cursor: pointer;
+   }
+   
+   .perfil1:hover{
+       background-color: blueviolet; /* Cor de fundo ao passar o mouse */
+       color: white; /* Cor do texto ao passar o mouse */
+       border: 2px solid white; /* Borda branca ao passar o mouse */
+       transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+   
+   .perfil1 i {
+       font-size: 24px; /* Tamanho do ícone */
+       margin-bottom: 10px; /* Espaço entre o ícone e o texto */
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+
+   .expe-text{
+    background-color: blueviolet;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.expe-text:hover{
+    background-color: rgb(179, 134, 222);
+    transition: 2s;
+}
+
+
+
+   .formulario {
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px; /* Largura máxima das informações de contato */
+    margin: auto;
+    height: 305px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.portifolio {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens igualmente ao longo do eixo principal */
+    align-items: center; /* Alinha os itens ao longo do eixo transversal */
+    max-width: 1200px; /* Ajuste conforme o tamanho desejado */
+    margin: 0 auto; /* Centraliza o grid horizontalmente */
+    gap: 10px; /* Espaçamento entre os grupos de imagens */
+}
+
+.overlay {
+    position: absolute; /* Sobreposição sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo escura com transparência */
+    color: white; /* Cor do texto */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o texto */
+    align-items: center; /* Centraliza verticalmente o texto */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+    text-align: center;
+    font-size: 8px; /* Tamanho do texto */
+    padding: 8px; /* Espaçamento ao redor do texto */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do contêiner */
+    cursor: pointer;
+}
+
+}
+
+@media (max-width: 499px) and (min-width : 390px){
+    
+    .banner{
+        background: url("../images/about/welcome-banner.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 641px;
+        
+    }
+    .banner-text h1{
+        color: white;
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+    
+    .banner-text p{
+        color: white;
+        font-size: 1.2em;
+    }
+    
+    .btn{
+        background-color: blueviolet;
+        padding: 10px 25px;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 35px;
+    }
+    
+    
+    .sobre .conteiner{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .sobre .sobre-text{
+        width: 100%;
+        margin: 10px;
+        
+    }
+    
+    .sobre .sobre-text h3{
+          width: 100%;
+          margin: auto;
+          line-height: 1.5em;
+          margin-bottom: 30px;
+    }
+    
+    .sobre .sobre-text p{
+        width: 100%;
+        line-height: 1.5em;
+        margin: auto;
+    }
+    
+    .sobre-text p{
+        font-size: 1em;
+    }
+    
+    .sobre .sobre-img{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .sobre .sobre-img img{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .sobre1{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .sobre1 h1{
+         margin: 30px;
+         padding-top: 30px;
+         border-bottom: 1px solid rgb(241, 208, 208);
+         padding-bottom: 50px;
+    }
+    
+    .sobre-text1{
+        display: block;
+        width: 100%;
+        margin: auto;
+    } 
+
+    .perfil-text{
+        margin: 40px;
+        background-color: white;
+        text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+   }
+   
+   .perfil-text {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr); /* Define 4 colunas */
+       gap: 10px; /* Espaçamento entre os itens */
+       width: 100%;
+       margin: auto;
+   }
+   
+   .perfil1 {
+       display: flex;
+       flex-direction: column; /* Alinha ícone e texto em coluna */
+       align-items: center; /* Centraliza ícone e texto horizontalmente */
+       justify-content: center; /* Centraliza ícone e texto verticalmente, se necessário */
+       text-align: center;
+       padding: 20px;
+       border: 1px solid black;
+       cursor: pointer;
+   }
+   
+   .perfil1:hover{
+       background-color: blueviolet; /* Cor de fundo ao passar o mouse */
+       color: white; /* Cor do texto ao passar o mouse */
+       border: 2px solid white; /* Borda branca ao passar o mouse */
+       transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+   
+   .perfil1 i {
+       font-size: 24px; /* Tamanho do ícone */
+       margin-bottom: 10px; /* Espaço entre o ícone e o texto */
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+
+   .expe-text{
+    background-color: blueviolet;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.expe-text:hover{
+    background-color: rgb(179, 134, 222);
+    transition: 2s;
+}
+
+
+
+   .formulario {
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px; /* Largura máxima das informações de contato */
+    margin: auto;
+    height: 305px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.portifolio {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens igualmente ao longo do eixo principal */
+    align-items: center; /* Alinha os itens ao longo do eixo transversal */
+    max-width: 1200px; /* Ajuste conforme o tamanho desejado */
+    margin: 0 auto; /* Centraliza o grid horizontalmente */
+    gap: 10px; /* Espaçamento entre os grupos de imagens */
+}
+
+.overlay {
+    position: absolute; /* Sobreposição sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo escura com transparência */
+    color: white; /* Cor do texto */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o texto */
+    align-items: center; /* Centraliza verticalmente o texto */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+    text-align: center;
+    font-size: 8px; /* Tamanho do texto */
+    padding: 8px; /* Espaçamento ao redor do texto */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do contêiner */
+    cursor: pointer;
+}
+
+}
+
+@media (max-width: 390px) and (min-width : 320px){
+    .banner-text h1{
+        color: white;
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+    
+    .banner-text p{
+        color: white;
+        font-size: 1.2em;
+    }
+    
+    .btn{
+        background-color: blueviolet;
+        padding: 10px 25px;
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 35px;
+    }
+    
+    
+    .sobre .conteiner{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    .sobre .sobre-text{
+        width: 100%;
+        margin: 10px;
+        
+    }
+    
+    .sobre .sobre-text h3{
+          width: 100%;
+          margin: auto;
+          line-height: 1.5em;
+          margin-bottom: 30px;
+    }
+    
+    .sobre .sobre-text p{
+        width: 100%;
+        line-height: 1.5em;
+        margin: auto;
+    }
+    
+    .sobre-text p{
+        font-size: 1em;
+    }
+    
+    .sobre .sobre-img{
+        width: 80%;
+        margin: auto;
+    }
+    
+    .sobre .sobre-img img{
+        width: 100%;
+        margin: auto;
+    }
+    
+    .sobre1{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .sobre1 h1{
+         margin: 30px;
+         padding-top: 30px;
+         border-bottom: 1px solid rgb(241, 208, 208);
+         padding-bottom: 50px;
+    }
+    
+    .sobre-text1{
+        display: block;
+        width: 100%;
+        margin: auto;
+    } 
+
+    .perfil-text{
+        margin: 40px;
+        background-color: white;
+        text-align: center;
+   }
+   
+   .perfil {
+       padding: 10px;
+   }
+   
+   .perfil-text {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr); /* Define 4 colunas */
+       gap: 10px; /* Espaçamento entre os itens */
+       width: 100%;
+       margin: auto;
+   }
+   
+   .perfil1 {
+       display: block;
+       flex-direction: column; /* Alinha ícone e texto em coluna */
+       align-items: center; /* Centraliza ícone e texto horizontalmente */
+       justify-content: center; /* Centraliza ícone e texto verticalmente, se necessário */
+       text-align: center;
+       padding: 5px;
+       border: 1px solid black;
+       cursor: pointer;
+   }
+   
+   .perfil1:hover{
+       background-color: blueviolet; /* Cor de fundo ao passar o mouse */
+       color: white; /* Cor do texto ao passar o mouse */
+       border: 2px solid white; /* Borda branca ao passar o mouse */
+       transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+   
+   .perfil1 i {
+       font-size: 24px; /* Tamanho do ícone */
+       margin-bottom: 10px; /* Espaço entre o ícone e o texto */
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+   
+   .perfil {
+       padding: 20px;
+       text-align: center;
+   }
+
+   .expe-text{
+    background-color: blueviolet;
+    width: 98%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 40px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.expe-text:hover{
+    background-color: rgb(179, 134, 222);
+    transition: 2s;
+}
+
+
+
+   .formulario {
+    display: block;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex: 1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px; /* Largura máxima das informações de contato */
+    margin: auto;
+    height: 305px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.portifolio {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens igualmente ao longo do eixo principal */
+    align-items: center; /* Alinha os itens ao longo do eixo transversal */
+    max-width: 1200px; /* Ajuste conforme o tamanho desejado */
+    margin: 0 auto; /* Centraliza o grid horizontalmente */
+    gap: 10px; /* Espaçamento entre os grupos de imagens */
+}
+
+.overlay {
+    position: absolute; /* Sobreposição sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo escura com transparência */
+    color: white; /* Cor do texto */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o texto */
+    align-items: center; /* Centraliza verticalmente o texto */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+    text-align: center;
+    font-size: 8px; /* Tamanho do texto */
+    padding: 8px; /* Espaçamento ao redor do texto */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do contêiner */
+    cursor: pointer;
+}
+
+}
+
+
+
+
